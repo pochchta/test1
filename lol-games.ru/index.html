@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Куколки LOL</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<meta name="yandex-verification" content="cf7d7f092f801cc2" />
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter47049714 = new Ya.Metrika({
+                    id:47049714,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/47049714" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<script type="text/javascript">
+    // установим обработчик события resize (изменение размеров экрана)
+    $(window).resize(function(){   
+        $(document).ready(function() {
+            if($(window).width() >= '768'){
+                $("#mob_menu_list").css("display", "none");
+            }
+        });
+    });
+    //выпадающее меню
+    $(document).ready(function(){
+        $("#mob_menu_icon").click(function(){
+            $("#mob_menu_list").slideToggle(300);
+            return false;
+        });
+    });
+    //закрываем мобильное меню при клике на любой элемент этого меню
+    $(document).ready(function(){
+        $(".mob_el").click(function(){
+            $("#mob_menu_list").slideToggle(100);
+            return true;
+        });
+    });
+</script>
+
+</head>
+
+<body>
+<!--Скрытая кнопка для замера ширины экрана-->
+<!--    <div id="size_window" onclick="alert($(window).width()+'x'+$(window).height());"></div>-->
+    
+    <div id="menu">
+        <div id="menu_cont">
+            <div id="menu_log" class="menu_el">
+                <a href="#">
+                    <img src="img/logotip.png" alt="логотип">
+                </a>
+            </div>
+            <div class="menu_el"><a href="#AnchCat">В чем особенность?</a></div>
+            <div class="menu_el"><a href="#AnchVid">Видеообзор</a></div>
+            <div class="menu_el"><a href="#AnchRev">Отзывы</a></div>
+            <div class="menu_el"><a href="#AnchDel">Доставка/Оплата</a></div>
+            <div class="menu_el">
+                <a href="#AnchForm"><div id="menu_butt">ЗАКАЗАТЬ</div></a>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+    
+    <div id="mob_menu">
+        <div id="mob_menu_cont">
+            <div id="mob_menu_icon" class="mob_menu_el">
+                <img src="img/mob_menu.png" alt="меню">
+            </div>
+            <div id="mob_menu_log" class="mob_menu_el">
+                <a href="#">
+                    <img src="img/logotip.png" alt="логотип">
+                </a>
+            </div>
+            <a href="#AnchForm"><div id="mob_menu_butt" class="mob_menu_el">
+                <div>ЗАКАЗАТЬ</div>
+            </div></a>
+            <div style="clear:both;"></div>
+        </div>
+        <div id="mob_menu_list">
+            <div class="mob_el"><a href="#AnchCat">В чем особенность?</a></div>
+            <div class="mob_el"><a href="#AnchVid">Видеообзор</a></div>
+            <div class="mob_el"><a href="#AnchRev">Отзывы</a></div>
+            <div class="mob_el"><a href="#AnchDel">Доставка/Оплата</a></div>
+        </div>
+    </div>
+    
+	<div id="main">
+	    <div id="main_cont">
+            
+	        <div id="main_offer" class="main_1">
+	            <div id="main_text">Кукла LOL + подарки!<br>Бесплатная доставка от 6 шт!</div>
+	            <div id="main_kit">
+	                <img src="img/nabor_LOL_mob.png" alt="набор">
+	            </div>
+	        </div>
+	        <div id="main_form" class="main_1">
+	            <div id="main_form_div">                 
+				   <!--<img id="main_original" src="img/original.png" alt="оригинал">-->
+                    <div id="m_form_text"><span id="main_span1">С НОВЫМ ГОДОМ!<spawn> <br>*цена за 6 шт</span></div>
+	                <div id="m_form_old" class="main_2">Старая цена:<br/><span id="main_span2">3990 руб.</span></div>
+                    <div id="m_form_new" class="main_2">Новая цена:<br/><span id="main_span3">2550 руб.</span></div>
+	                <div style="clear:both;"></div>
+					
+	                <input class="m_input SONameH" type="text" placeholder="Имя" maxlength="25"><br/>
+	                <input class="m_input SOPhoneH" type="text" placeholder="Телефон" maxlength="20"><br/>
+					<select class="m_input SOChasiH" type="text" placeholder="Набор" maxlength="20"><br/>
+								<option value="">Выберайте набор кукол LOL</option > 
+							
+								<option value = "Набор LOL 3 куклы + подарок - 1490р (+доставка 350р)" >Набор LOL 3 куклы + подарок - 1490р (+доставка 350р)</option>								
+								<option value="Набор LOL 6 кукол + подарок - 2490р (беспл дост)">Набор LOL 6 кукол + подарок- 2490р (беспл дост)</option >		
+								<option value="Набор LOL 6 кукол + подарок - 2490р (беспл дост)">Набор LOL 9 кукол + 2 подарка- 2490р (беспл дост)</option >		
+								<option value="Набор LOL 18 кукол + подарок - 5890р (беспл дост)">Набор LOL 12 кукол + 2 подарка - 5890р (беспл дост)</option >	
+								<option value="Набор LOL 18 кукол + подарок - 5890р (беспл дост)">Набор LOL 18 кукол + 3 подарка - 5890р (беспл дост)</option >	
+								<option value="Набор доктора LOL + подарок - 2690р (беспл дост)">Набор доктора LOL + подарок - 2690р (беспл дост)</option >
+	                <input id="m_input_butt" type="button" onclick="SendOrderH();" value="ЗАКАЗАТЬ НАБОР L.O.L.">
+					
+	            </div>
+	        </div>
+	        <div style="clear:both;"></div>
+	    </div>
+	</div>
+	
+	
+		<div id="zipper1"></div>
+		
+	
+	<div id="garant">
+	   <div id="garant_cont">
+	       <div class="gar_1">
+	           <img src="img/gar1.png" alt="куколка"><br/>
+	           Оплата на месте получения
+	       </div>
+	       <div class="gar_1">
+	           <img id="gar_img2" src="img/gar2.png" alt="куколка"><br/>
+	           Гарантия высокого качества
+	       </div>
+	       <div class="gar_1">
+	           <img src="img/gar3.png" alt="куколка"><br/>
+	           Быстрая доставка по РФ
+	       </div>
+	       <div style="clear:both;"></div>
+	   </div> 
+	</div>
+	
+	
+		<div id="video">
+        <div id="AnchVid" style="position: absolute; margin-top: -30px;"></div><!--Якорь-->
+	    <div id="video_cont">
+            <div id="video_head">ЛУЧШЕ УВИДЕТЬ ВСЕ СВОИМИ ГЛАЗАМИ..</div>
+            <div id="video_play">
+                <iframe id="video_iframe" src="https://www.youtube.com/embed/nUZuhpx30xQ?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div id="video_form">
+                <input class="video_input SONameV" type="text" placeholder="Имя" maxlength="25"><br/>
+	            <input class="video_input SOPhoneV" type="text" placeholder="Телефон" maxlength="20"><br/>
+	            <input id="video_input_butt" type="button" onclick="SendOrderV();" value="ЗАКАЗАТЬ НАБОР L.O.L.">
+            </div>
+	    </div>
+	</div>
+	
+	
+	
+		<section class="bg-vitrina1"><!--БЛОК С АКЦИЕЙ-->
+	<h1>ЗАКАЖИТЕ СВОЙ НАБОР<br> И ПОЛУЧИТЕ ПОДАРКИ!</h1>
+			<center>
+		<div style="width:1065px;" class="block-vitrin1">
+			<div class="watch-vitrin1">
+				<div class="vitrin-txt1">
+					<h2>Набор кукол LOL</h2>
+					<p>3 шт + подарок!</p>
+					<br><br>
+					<h3><span class="vt-txt1">2590 р.</span> <span class="vt-txt"> 1450 р.</span></h3>
+					<a href="#AnchForm"><button id="menu_butt1" href="#AnchForm" class="button-rez">ЗАКАЗАТЬ</button></a>
+				</div>
+			</div>			
+			<div class="watch-vitrin6">
+				<div class="vitrin-txt2">
+					<h2>Набор кукол LOL</h2>
+					<p>6 шт + подарок!<br><strong>бесплатная доставка</strong></p>
+					<br><br>
+					<h3><span class="vt-txt1">3990 р.</span> <span class="vt-txt"> 2550 р.</span></h3>
+					<a href="#AnchForm"><button id="menu_butt1" href="#AnchForm">ЗАКАЗАТЬ</button></a>
+				</div>
+			</div>
+			<div class="watch-vitrin5">
+				<div class="vitrin-txt2">
+					<h2>Набор кукол LOL</h2>
+					<p>9 шт + 2 подарка!<br><strong>бесплатная доставка</strong></p>
+					<br><br>
+					<h3><span class="vt-txt1">5490 р.</span> <span class="vt-txt"> 3999 р.</span></h3>
+					<a href="#AnchForm"><button id="menu_butt1" href="#AnchForm">ЗАКАЗАТЬ</button></a>
+				</div>
+			</div>	
+		</div>
+	</center>
+</section><!--БЛОК С АКЦИЕЙ-->
+	
+	<section class="bg-vitrina2"><!--БЛОК С АКЦИЕЙ-->
+	<h1></h1>
+			<center>
+		<div style="width:1065px;" class="block-vitrin1">
+			<div class="watch-vitrin2">
+				<div class="vitrin-txt2">
+					<h2>Набор кукол LOL</h2>
+					<p>12 шт + 2 подарка!<br><strong>бесплатная доставка</strong></p>
+					<br><br>
+					<h3><span class="vt-txt1">6290 р.</span> <span class="vt-txt"> 4890 р.</span></h3>
+					<a href="#AnchForm"><button id="menu_butt1" href="#AnchForm" class="button-rez">ЗАКАЗАТЬ</button></a>
+				</div>
+			</div>			
+			<div class="watch-vitrin3">
+				<div class="vitrin-txt2">
+					<h2>Набор кукол LOL</h2>
+					<p>18 шт + 3 подарка!<br><strong>бесплатная доставка</strong></p>
+					<br><br>
+					<h3><span class="vt-txt1">8990 р.</span> <span class="vt-txt"> 5790 р.</span></h3>
+					<a href="#AnchForm"><button id="menu_butt1" href="#AnchForm">ЗАКАЗАТЬ</button></a>
+				</div>
+			</div>
+			<div class="watch-vitrin4">
+				<div class="vitrin-txt1">
+					<h2>Набор доктора LOL</h2>
+					<p>1 шт + подарок!!</p>
+					<br><br>
+					<h3><span class="vt-txt1">3490 р.</span> <span class="vt-txt"> 2690 р.</span></h3>
+					<a href="#AnchForm"><button id="menu_butt1" href="#AnchForm">ЗАКАЗАТЬ</button></a>
+				</div>
+			</div>	
+		</div>
+	</center>
+</section><!--БЛОК С АКЦИЕЙ-->
+
+
+	<div id="layers">
+	    <div id="lay_cont">
+	        <img id="lay_7_img" src="img/7_layer.jpg" alt="7 сюрпризов">
+	        <img id="lay_7_img_mob" src="img/7_layer_mob.jpg" alt="7 сюрпризов">
+	    </div>
+	</div>
+	
+	
+	<div id="zipper1"></div>
+	
+	
+	<div id="main">
+	    <div id="main_cont">
+            
+	        <div id="main_offer" class="main_1">
+	            <div id="main_text">Игрушка-ХИТ 2018 года!<br>Bunchems в подарок!</div>
+	            <div id="main_kit">
+	                <img src="img/nabor_LOL_mob.png" alt="набор">
+	            </div>
+	        </div>
+	        <div id="main_form" class="main_1">
+	            <div id="main_form_div">
+                    <!--<img id="main_original" src="img/original.png" alt="оригинал">-->
+                    <div id="m_form_text"><span id="main_span1">С НОВЫМ ГОДОМ!<spawn> <br>*цена за 6 шт</span></div>
+	                <div id="m_form_old" class="main_2">Старая цена:<br/><span id="main_span2">3990 руб.</span></div>
+                    <div id="m_form_new" class="main_2">Новая цена:<br/><span id="main_span3">2550 руб.</span></div>
+	                <div style="clear:both;"></div>
+					
+	                <input class="m_input SONameH" type="text" placeholder="Имя" maxlength="25"><br/>
+	                <input class="m_input SOPhoneH" type="text" placeholder="Телефон" maxlength="20"><br/>
+					<select class="m_input SOChasiH" type="text" placeholder="Набор" maxlength="20"><br/>
+								<option value="">Выберайте набор кукол LOL</option > 
+							
+								<option value = "Набор LOL 3 куклы + подарок - 1490р (+доставка 350р)" >Набор LOL 3 куклы + подарок - 1490р (+доставка 350р)</option>								
+								<option value="Набор LOL 6 кукол + подарок - 2490р (беспл дост)">Набор LOL 6 кукол + подарок- 2490р (беспл дост)</option >		
+								<option value="Набор LOL 6 кукол + подарок - 2490р (беспл дост)">Набор LOL 9 кукол + 2 подарка- 2490р (беспл дост)</option >		
+								<option value="Набор LOL 18 кукол + подарок - 5890р (беспл дост)">Набор LOL 12 кукол + 2 подарка - 5890р (беспл дост)</option >	
+								<option value="Набор LOL 18 кукол + подарок - 5890р (беспл дост)">Набор LOL 18 кукол + 3 подарка - 5890р (беспл дост)</option >	
+								<option value="Набор доктора LOL + подарок - 2690р (беспл дост)">Набор доктора LOL + подарок - 2690р (беспл дост)</option >
+	                <input id="m_input_butt" type="button" onclick="SendOrderH();" value="ЗАКАЗАТЬ НАБОР L.O.L.">
+	            </div>
+	        </div>
+	        <div style="clear:both;"></div>
+	    </div>
+	</div>
+		
+	<div id="zipper1"></div>
+	
+		<div id="categories">
+         <div id="AnchCat" style="position: absolute; margin-top: -30px;"></div><!--Якорь-->
+		 <div id="cat_cont">
+		    <div id="lay_head">ОСОБЕННОСТИ КУКОЛОК LOL</div>
+            <img id="lay_cat" src="img/categories_dolls1.png" alt="категории_куколок"> 
+		 </div>   
+	</div>
+
+	
+	
+	<div id="reviews">
+        <div id="AnchRev" style="position: absolute; margin-top: -30px;"></div><!--Якорь-->
+	    <div id="rev_cont">
+            <div id="rev_head">ОТЗЫВЫ ДОВОЛЬНЫХ КЛИЕНТОВ</div>
+            <div class="rev_block1">
+                <div class="rev_block11">
+                    <img src="img/reviews_1.png" alt="отзыв2"><br/>
+                    <b>Татьяна, 56 лет, Воронеж.</b> Любимая внученька попросила этих куколок, но походив по детским магазинам, так и не удалось найти этот подарок. Пришлось рискнуть заказать в интернте. Но к счастью меня не обманули, доставили в течении 4 дней. Операторы очень любезные и культурные люди.
+                </div>
+                <div class="rev_block11">
+                    <img src="img/reviews_2.png" alt="отзыв1"><br/>
+                    <b>Оксана, 32 года. Омск.</b> Вот и мы и приобрели данную новинку! И честно - не жалеем! Об этом наборе LOL самой первой узнала моя дочька из видео на Ютубе. И тут понеслось.. хочу! Купите!.. Ну вот и пришлось купить! Боялась, что куклы будыт ужасного качаства, но нет. Все было отлично, а главное дочка оценила по достоинству! :)
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="rev_block2">
+               <div class="rev_block11">
+                    <img src="img/reviews_4.png" alt="отзыв1"><br/>
+                    <b>Екатерина, 28 лет. Тольятти.</b> Доча, давно выпрашивала эту куколку, я поставила условие "За хорошие отметки в школе, куплю тебе набор куколок Л.О.Л.". За старательное отншение к учебе, приобрела ей этих куколок. Я довольна покупокй, доча ещё больше довольна.
+                </div>
+                <div class="rev_block11">
+                    <img src="img/reviews_3.png" alt="отзыв2"><br/>
+                    <b>Эмма, 36 лет. ст. Вешенская.</b> Подарили ребенку на 5 лет необычные шарики, в коробке шесть штук. Изначально вообще не понимали что это такое, немного ознакомились на сайте с этим чудом и купили без замедления. Радости нашей крошки нет предела. Планируем пополнять коллекцию!
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div id="rev_footer">ХОТИТЕ СТАТЬ ДОВОЛЬНЫМ КЛИЕНТОМ? ЗАКАЗЫВАЙТЕ!</div>
+            <div id="rev_form">
+                <input class="video_input SONameR" type="text" placeholder="Имя" maxlength="25"><br/>
+	            <input class="video_input SOPhoneR" type="text" placeholder="Телефон" maxlength="20"><br/>
+	            <input id="video_input_butt" type="button" onclick="SendOrderR();" value="ЗАКАЗАТЬ НАБОР L.O.L.">
+            </div>
+	    </div>
+	</div>
+	
+	<div id="delivery">
+        <div id="AnchDel" style="position: absolute; margin-top: -30px;"></div><!--Якорь-->
+	    <div id="del_conf">
+	        <div id="del_head">ДОСТАВКА И ОПЛАТА</div>
+	        <img id="del_img" src="img/delivery.jpg" alt="доставка">
+	        <img id="del_img_mob" src="img/delivery(mob).jpg" alt="доставка">
+	    </div>
+	</div>
+	
+	
+	<div id="zipper1"></div>
+	
+	
+	<div id="main">
+        <div id="AnchForm" style="position: absolute; margin-top: -80px;"></div><!--Якорь-->
+        <div id="AnchSale" style="position: absolute; margin-top: -80px;"></div><!--Якорь-->
+	    <div id="main_cont1">
+            <div id="main_text2">ПОДАРИТЕ ДЕТЯМ СЧАСТЬЕ!</div>
+	        <div id="main_offerr" class="main_11">
+	            <div id="main_kit">
+	                <img src="img/nabor_LOL_mob.png" alt="набор">
+	            </div>
+	        </div>
+	        <div id="main_form" class="main_11">
+	            <div id="main_form_div">
+                    <div id="m_form_text"><span id="main_span1">С НОВЫМ ГОДОМ!<spawn><br>Подарки всем!</span></div>
+	                <div id="m_form_old" class="main_2">Старая цена:<br/><span id="main_span2">3990 руб.</span></div>
+                    <div id="m_form_new" class="main_2">Новая цена:<br/><span id="main_span3">2550 руб.</span></div>
+	                <div style="clear:both;"></div>
+	                <input class="m_input SONameF" type="text" placeholder="Имя" maxlength="25"><br/>
+	                <input class="m_input SOPhoneF" type="text" placeholder="Телефон" maxlength="20"><br/>
+	                <input id="m_input_butt" type="button" onclick="SendOrderF();" value="ЗАКАЗАТЬ НАБОР L.O.L.">
+	            </div>
+	        </div>
+	        <div style="clear:both;"></div>
+	    </div>
+	    <div id="main_cont2"><br/>
+	        <div id="main_form" class="main_11">
+	            <div id="main_form_div">
+                    <img id="main2_original" src="img/original.png" alt="оригинал">
+					<!--<img id="main_original" src="img/original.png" alt="оригинал">-->
+                    <div id="m_form_text"><span id="main_span1">С НОВЫМ ГОДОМ!<spawn> <br>*цена за 6 шт</span></div>
+	                <div id="m_form_old" class="main_2">Старая цена:<br/><span id="main_span2">3990 руб.</span></div>
+                    <div id="m_form_new" class="main_2">Новая цена:<br/><span id="main_span3">2550 руб.</span></div>
+	                <div style="clear:both;"></div>
+					
+	                <input class="m_input SONameH" type="text" placeholder="Имя" maxlength="25"><br/>
+	                <input class="m_input SOPhoneH" type="text" placeholder="Телефон" maxlength="20"><br/>
+					<select class="m_input SOChasiH" type="text" placeholder="Набор" maxlength="20"><br/>
+								<option value="">Выберайте набор кукол LOL</option > 
+							
+								<option value = "Набор LOL 3 куклы + подарок - 1490р (+доставка 350р)" >Набор LOL 3 куклы + подарок - 1490р (+доставка 350р)</option>								
+								<option value="Набор LOL 6 кукол + подарок - 2490р (беспл дост)">Набор LOL 6 кукол + подарок- 2490р (беспл дост)</option >		
+								<option value="Набор LOL 6 кукол + подарок - 2490р (беспл дост)">Набор LOL 9 кукол + 2 подарка- 2490р (беспл дост)</option >		
+								<option value="Набор LOL 18 кукол + подарок - 5890р (беспл дост)">Набор LOL 12 кукол + 2 подарка - 5890р (беспл дост)</option >	
+								<option value="Набор LOL 18 кукол + подарок - 5890р (беспл дост)">Набор LOL 18 кукол + 3 подарка - 5890р (беспл дост)</option >	
+								<option value="Набор доктора LOL + подарок - 2690р (беспл дост)">Набор доктора LOL + подарок - 2690р (беспл дост)</option >
+	                <input id="m_input_butt" type="button" onclick="SendOrderH();" value="ЗАКАЗАТЬ НАБОР L.O.L.">
+	            </div>
+	        </div>
+	        <div id="main_text2">ПОДАРИТЕ ДЕТЯМ СЧАСТЬЕ!</div>
+	        <div id="main_offerr" class="main_11">
+	            <div id="main_kit">
+	                <img src="img/nabor_LOL_mob.png" alt="набор">
+	            </div>
+	        </div>
+	        <div style="clear:both;"></div>
+	    </div>
+    </div>
+	
+	<div id="footer">
+	    <div id="footer_conf">
+	        ИП Трофимов С. М.<br/>
+            Фактический/почтовый адрес: Москва, ул. Есенина, д.11<br/>
+            тел. 8(950)677-37-66<br/><br/>
+
+            ИНН 717203000690<br/>
+            Copyright @ lol-games.ru 2018<br/>
+            Все права защищены<br/>
+            <a href="privacy_policy.html" target="_blank">Политика конфиденциальности</a>
+	    </div>
+	</div>
+	
+	
+	
+</body>
+
+</html>

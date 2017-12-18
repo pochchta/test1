@@ -1,0 +1,2 @@
+добавить system path адрес папки
+wget --page-requisites -r -l 10 httpsite.rus
