@@ -1965,7 +1965,11 @@ body, html{
 
 
 /*correct*/
-.bg-vitrina1,
+/*.bg-vitrina1,
 .bg-vitrina2 {
     display: none;
-}
+}*/
+
+
+.block-vitrin1 { width: auto !important; min-width: auto; margin: 0px auto; padding: 10px 0px 0px; }
+.block-vitrin2 { width: auto !important; min-width: auto; margin: 0px auto; padding: 20px 0px 0px; }
