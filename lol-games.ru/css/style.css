@@ -1964,12 +1964,56 @@ body, html{
 
 
 
-/*correct*/
-/*.bg-vitrina1,
-.bg-vitrina2 {
-    display: none;
-}*/
+/**/
 
-
-.block-vitrin1 { width: auto !important; min-width: auto; margin: 0px auto; padding: 10px 0px 0px; }
-.block-vitrin2 { width: auto !important; min-width: auto; margin: 0px auto; padding: 20px 0px 0px; }
+.bg-vitrina1{
+    width: auto;
+    min-width: auto;
+    height: auto;
+    background: linear-gradient(to top, #e0f4f3, #f7b3ca, #d8dff2);
+}
+.grid-vitrin{
+    margin: 0 auto;
+}
+.grid-vitrin > div{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin: 0 0 20px 0;
+    background-position: center 0;
+}
+.grid-vitrin > div > div{
+    text-align: center;
+    margin-top: 360px;
+    position: static;
+}
+.grid-vitrin > div > div p{
+    height: 50px;
+}    
+@media screen and (min-width:1024px){
+    .grid-vitrin{
+        width: 1000px;
+    }
+    .grid-vitrin > div{
+        width: 33.33%;
+    }
+}    
+@media screen and (min-width:768px) and (max-width:1023px){
+    .grid-vitrin{
+        width: 700px;
+    }    
+    .grid-vitrin > div{
+        width: 50%;
+    }
+}
+@media screen and (max-width:767px){
+    .grid-vitrin > div{
+        width: 100%;
+    }
+}
+.clearfix:after{
+  display: block;
+  clear: both;
+  content: '';
+}
