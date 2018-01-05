@@ -1,0 +1,1 @@
+wget --page-requisites -r -l 10 https://owlcarousel2.github.io/OwlCarousel2/demos/responsive.html
