@@ -1,5 +1,3 @@
-tempermonkey
-
 // ==UserScript==
 // @name myUserJS
 // @description Мой самый первый юзерскрипт
@@ -11,11 +9,15 @@ tempermonkey
 
 
 var delay_counter = 0;
+var last_id;
 const DELAY_SET = 10;
 function change(){
     if (delay_counter > DELAY_SET){
         //alert(delay_counter);
-        new Audio('https://sound-pack.net/audio/sfx/94/windows_2000_notify.mp3').play();
+        if (last_id != document.getElementsByClassName('orderOther')[0].getAttribute('orderid')){
+            new Audio('https://sound-pack.net/audio/sfx/94/windows_2000_notify.mp3').play();
+        }
+        last_id = document.getElementsByClassName('orderOther')[0].getAttribute('orderid');
     }
 }
 function delay(){
@@ -24,7 +26,3 @@ function delay(){
 }
 var delay_id = setInterval(delay, 1000);
 document.addEventListener('DOMNodeInserted', change);
-
-
-
-document.getElementsByClassName('orderOther')[0].getAttribute('orderid')
