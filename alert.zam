@@ -1,0 +1,30 @@
+tempermonkey
+
+// ==UserScript==
+// @name myUserJS
+// @description Мой самый первый юзерскрипт
+// @author Vasya Pupkin
+// @license MIT
+// @version 1.0
+// @include https://client.work-zilla.com/Freelancer
+// ==/UserScript==
+
+
+var delay_counter = 0;
+const DELAY_SET = 10;
+function change(){
+    if (delay_counter > DELAY_SET){
+        //alert(delay_counter);
+        new Audio('https://sound-pack.net/audio/sfx/94/windows_2000_notify.mp3').play();
+    }
+}
+function delay(){
+    delay_counter++;
+    if (delay_counter > DELAY_SET) clearInterval(delay_id);
+}
+var delay_id = setInterval(delay, 1000);
+document.addEventListener('DOMNodeInserted', change);
+
+
+
+document.getElementsByClassName('orderOther')[0].getAttribute('orderid')
