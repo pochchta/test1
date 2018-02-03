@@ -44,6 +44,7 @@
 ul,li{
 	margin: 0;
 	padding: 0;
+	list-style: none;
 }
 .clearfix:after{
 	content: '';
@@ -73,14 +74,6 @@ a.a_black:hover{
 	left: 0;
 	z-index: 10;	
 }
-.bg{
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 9;		
-}
 .text_block{
 	height: 100%;
 	width: 100%;
@@ -101,8 +94,7 @@ a.a_black:hover{
 .sidebar{
 	background-color: #f7f7f7;
 	width: 311px;
-	float: left;
-	height: 1000px;
+	position: fixed;
 }
 .sidebar .logo{
 	display: block;
@@ -195,7 +187,7 @@ a.a_black:hover{
 
 
 .main{
-	overflow: hidden;
+	margin-left: 311px;
 }
 .header{
 	position: relative;
@@ -297,18 +289,16 @@ a.a_black:hover{
 	font-weight: 400;
 }
 .header .text_header .bottom a{
-	border-width: 2px;
+	background-color: transparent;	
 	border-color: #fec300;
-	border-style: solid;
-	width: 196px;
-	height: 46px;
-	display: block;
-	font-family: GothamPro;
-	color:  #fec300;
-	font-size: 14px;/* Приближение из-за подстановки шрифтов */
-	font-weight: 700;
-	line-height: 46px;
-	text-align: center;
+	color: #fec300;
+	border-radius: 0;
+	padding: 9px 33px;
+	margin-top: 10px;
+}
+.header .text_header .bottom a:hover{
+	background-color: #fec300;
+	color:  #fff;
 }
 
 
@@ -323,14 +313,103 @@ a.a_black:hover{
 	font-size: 36px;
 	margin-top: 120px;
 	margin-left: 160px;
+	margin-bottom: 182px;
+	text-transform: uppercase;
 }
-
+.furniture ul{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.furniture ul li{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 0 80px 30px;
+}
+.furniture ul li .text{
+	font-family: GothamPro;
+	color: #000000;
+	font-size: 18px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	position: relative;
+	width: 410px;
+}
+.furniture ul li .text .num{
+	font-size: 72px;
+	background: linear-gradient(#f9e7b1, #c29a3c);  /* подробнее про градиенты */ 
+	-webkit-background-clip: text;  /* подробнее про background-clip */ 
+	color: transparent;
+	position: absolute;
+	left: -72px;
+}
+.furniture ul li .text span{
+	font-weight: 700;
+}
 
 /*3*/
 .advantage{
 	height: 900px;
 	background: url("img/bg3.jpg");
 	position: relative;
+}
+.advantage .text_block{
+	background-image: url('img/logo_and_stick.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.advantage .text_block h3{
+	font-size: 36px;
+	margin-top: 120px;
+	margin-left: 160px;
+	margin-bottom: 60px;
+	text-transform: uppercase;
+}
+.advantage .text_block ul{
+
+}
+.advantage .text_block ul li{
+	line-height: 43px;
+	background: url("img/ring.png") no-repeat;
+	font-family: GothamPro;
+	color:  #000000;
+	font-size: 18px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 500;
+	padding-left: 18px;
+}
+.advantage .text_block ul li:nth-child(1){
+	margin-left: 16%;
+	margin-top: 0px;
+}
+.advantage .text_block ul li:nth-child(2){
+	margin-left: 58%;
+	margin-top: -11px;
+}
+.advantage .text_block ul li:nth-child(3){
+	margin-left: 9%;
+	margin-top: 66px;
+}
+.advantage .text_block ul li:nth-child(4){
+	margin-left: 68%;
+	margin-top: -30px;
+}
+.advantage .text_block ul li:nth-child(5){
+	margin-left: 14%;
+	margin-top: 110px;
+}
+.advantage .text_block ul li:nth-child(6){
+	margin-left: 61%;
+	margin-top: -20px;
+}
+.advantage .text_block ul li:nth-child(7){
+	margin-left: 42%;
+	margin-top: 55px;
 }
 
 
