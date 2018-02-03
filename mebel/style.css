@@ -1,0 +1,100 @@
+@font-face {
+	font-family: "Rex";
+	src: url("fonts/rex-bold-webfont.woff") format("woff");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "GothamPro";
+	src: url("../fonts/GothamProLight/GothamProLight.eot");
+	src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/GothamProLight/GothamProLight.woff") format("woff"),
+	url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 300;
+}
+@font-face {
+	font-family: "GothamPro";
+	src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+	src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"),
+	url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 500;
+}
+
+body{
+	font-family: "Rex", sans-serif;
+}
+
+.container_main{
+
+}
+.sidebar{
+	background-color: #f7f7f7;
+	width: 311px;
+	float: left;
+	height: 1000px;
+
+}
+.sidebar .logo{
+	display: block;
+	width: 235px;
+	height: 120px;
+	background: url("img/logo.png");
+	margin: 60px 0 23px 50px;
+}
+.sidebar .insta{
+	color:  #000000;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-left: 57px;
+}
+.sidebar .nav{
+	float: none;
+	margin: 82px  0 0 60px;
+}
+.sidebar .nav li{
+	float: none;
+}
+.sidebar .nav > li{
+	margin: 8px 0;
+}
+.sidebar .nav > li.active{
+	position: relative;
+}
+.sidebar .nav > li.active > a{
+	color: #000;
+	margin-left: 55px;
+}
+.sidebar .nav > li.active:before{
+	content: '';
+	width: 30px;
+	height: 3px;
+	display: block;
+	background-color: #f0c02e;
+	position: absolute;
+	top: 22px;
+	left: 21px;
+}
+.sidebar .nav li a{
+	color: #9d9d9d;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+.sidebar .dropdown:hover > .dropdown-menu{
+	display: block;
+}
+.sidebar .tel{
+	color:  #000000;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-left: 57px;
+}
+
+
+.main{
+	overflow: hidden;
+
+}
