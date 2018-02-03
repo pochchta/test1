@@ -31,7 +31,21 @@
 	font-style: normal;
 	font-weight: 500;
 }
+@font-face {
+	font-family: "GothamPro";
+	src: url("fonts/GothamProBold/GothamProBold.eot");
+	src: url("fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+	url("fonts/GothamProBold/GothamProBold.woff") format("woff"),
+	url("fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
+}
 
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
 body{
 	font-family: "Rex", sans-serif;
 }
@@ -191,31 +205,77 @@ a.a_black:hover{
 }
 
 
+
+
 .text_header{
 	height: 900px;
 	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 10;
+	z-index: 10; 
+	background-color: rgba(33,34,0,0.58);
 }
-.text_header h1{
+.text_header .left{
+	float: left;
+	width: 870px;
+}
+.text_header .left h1{
 	color:  #fec300;
 	font-size: 48px;
 	width: 580px;
 	margin-top: 250px;
 	margin-left: 161px;
 }
-.text_header h1 span{
+.text_header .left h1 span{
 	padding-top: 14px;
 	display: inline-block;
 }
-.text_header{
-	height: 900px;
-	width: 100%;
+
+.text_header .left .text{
+	width: 697px;
+	font-family: GothamPro;
+	color:  #ffffff;
+	font-size: 18px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	margin-top: 40px;
+	margin-left: 161px;
+
+}
+
+.text_header .sticker{
+	float: right;
+	background: url("img/sticker_header.png") no-repeat;
+	width: 170px;
+	height: 175px;
+	margin-top: 258px;
+	margin-right: 161px;
+}
+.text_header .bottom{
 	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 11;
-	background-color: rgba(33,34,0,0.58);
+	bottom: 60px;
+	right: 0;
+	margin-top: 357px;
+	margin-right: 161px;
+}
+.text_header .bottom .description{
+	width: 140px;
+	font-family: GothamPro;
+	color:  #ffffff;
+	font-size: 14px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+}
+.text_header .bottom a{
+	border-width: 2px;
+	border-color: #fec300;
+	border-style: solid;
+	width: 196px;
+	height: 46px;
+	display: block;
+	font-family: GothamPro;
+color:  #fec300;
+font-size: 14px;/* Приближение из-за подстановки шрифтов */
+font-weight: 700;
+line-height: 46px;
+text-align: center;
 }
