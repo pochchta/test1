@@ -154,36 +154,123 @@
 				<div class="text_block">
 					<h3>Наши работы</h3>
 					<ul class="nav nav-tabs">
-						<li class="active"><a href="#home" data-toggle="tab">Главная</a></li>
-						<li><a href="#profile" data-toggle="tab">Профиль</a></li>
-						<li><a href="#messages" data-toggle="tab">Сообщения</a></li>
-						<li><a href="#settings" data-toggle="tab">Настройки</a></li>
+						<li class="active"><a href="#all" data-toggle="tab">Все работы</a></li>
+						<li><a href="#cat1" data-toggle="tab">Кухни</a></li>
+						<li><a href="#cat2" data-toggle="tab">Шкафы</a></li>
+						<li><a href="#cat3" data-toggle="tab">Прихожие</a></li>
+						<li><a href="#cat4" data-toggle="tab">Кровати</a></li>
+						<li><a href="#cat5" data-toggle="tab">Детские</a></li>
+						<li><a href="#cat6" data-toggle="tab">Для офиса</a></li>
 					</ul>
-
 					<!-- Tab panes -->
 					<div class="tab-content">
-						<div class="tab-pane active" id="home">дом</div>
-						<div class="tab-pane" id="profile">профиль</div>
-						<div class="tab-pane" id="messages">сообщение</div>
-						<div class="tab-pane" id="settings">настройки</div>
+						<div class="tab-pane active" id="all">
+
+							<div class="arrow">
+								<i class="fa fa-arrow-left slider_works_left"></i>
+								<i class="fa fa-arrow-right slider_works_right"></i>
+							</div>
+
+							<div class="slider_works">
+								<div class="slide">
+									<img src="img/works1.jpg" alt="">
+									ЖК Hihgvill, спальня
+								</div>
+								<div class="slide">
+									<img src="img/works2.jpg" alt="">
+									ЖК Керемет, кухня
+								</div>
+								<div class="slide">
+									<img src="img/works3.jpg" alt="">
+									ЖК Туран, кухня
+								</div>					
+								<div class="slide">
+									<img src="img/works3.jpg" alt="">
+									ЖК Туран, кухня
+								</div>			
+							</div>
+						</div>
+						<div class="tab-pane" id="cat1">Кухни</div>
+						<div class="tab-pane" id="cat2">Шкафы</div>
+						<div class="tab-pane" id="cat3">Прихожие</div>
+						<div class="tab-pane" id="cat4">Кровати</div>
+						<div class="tab-pane" id="cat5">Детские</div>
+						<div class="tab-pane" id="cat6">Для офиса</div>
+
 					</div>
 				</div>
 			</div>
 
 			<div class="team">
 				<div class="line_pattern"></div>
-				<div class="text_block"></div>
+				<div class="text_block">
+					<h3>Наша команда</h3>
+					<div class="arrow">
+						<i class="fa fa-arrow-left slider_works_left"></i>
+						<i class="fa fa-arrow-right slider_works_right"></i>
+					</div>
+
+					<div class="slider_works">
+						<a href="#" class="slide">
+							<img src="img/user.jpg" alt="">
+							<span class="name">ДМИТРИЙ</span>
+							<span class="name">МОГИЛЕВСКИЙ</span>	
+							<span class="post">Директор</span>
+						</a>
+						<a href="#" class="slide">
+							<img src="img/user.jpg" alt="">
+							<span class="name">АРМАН</span>
+							<span class="name">МУРАТОВ</span>
+							<span class="post">Мастер цеха</span>
+						</a>
+						<a href="#" class="slide">
+							<img src="img/user.jpg" alt="">
+							<span class="name">АСЕЛЬ</span>
+							<span class="name">АБИЛОВА</span>
+							<span class="post">Дизайнер</span>
+						</a>				
+						<a href="#" class="slide">
+							<img src="img/user.jpg" alt="">
+							<span class="name">АСЕЛЬ</span>
+							<span class="name">АБИЛОВА</span>
+							<span class="post">Дизайнер</span>
+						</a>		
+					</div>
+				</div>
 			</div>
 
 			<div class="certificates">
 				<div class="line_pattern"></div>
-				<div class="text_block"></div>
+				<div class="text_block">
+					<h3>Наша команда</h3>
+					<div class="arrow">
+						<i class="fa fa-arrow-left slider_works_left"></i>
+						<i class="fa fa-arrow-right slider_works_right"></i>
+					</div>
+					<div class="slider_works">
+						<a href="#" class="slide">
+							<img src="img/cert.jpg" alt="">
+						</a>
+						<a href="#" class="slide">
+							<img src="img/cert.jpg" alt="">
+						</a>
+						<a href="#" class="slide">
+							<img src="img/cert.jpg" alt="">
+						</a>				
+						<a href="#" class="slide">
+							<img src="img/cert.jpg" alt="">
+						</a>		
+					</div>
+				</div>
 			</div>
 
 
 			<div class="contacts">
 				<div class="line_pattern"></div>
-				<div class="text_block"></div>
+				<div class="text_block">
+					<h3>Контакты</h3>
+					<a href="https://yandex.ru/maps/?um=constructor%3Ae36d1fddef1cdf63f7fdcae58e40bab1c997333653f4a1f50d1d9fc60331e856&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Ae36d1fddef1cdf63f7fdcae58e40bab1c997333653f4a1f50d1d9fc60331e856&amp;width=484&amp;height=400&amp;lang=ru_RU" alt="" style="border: 0;" /></a>
+				</div>
 			</div>
 
 
@@ -198,6 +285,16 @@
 			$('.slider_header').slick({
 				dots: true
 			});
+			$('.slider_works').slick({
+				slidesToShow: 3,
+				arrows: true
+			});
+			$('.slider_works_right').on('click', function() {
+				$('.slider_works').slick('slickNext');
+			});
+			$('.slider_works_left').on('click', function() {
+				$('.slider_works').slick('slickPrev');
+			});			
 		});
 	</script>
 </body>

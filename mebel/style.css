@@ -419,6 +419,63 @@ a.a_black:hover{
 	background: url("img/bg4.jpg");
 	position: relative;
 }
+.work .text_block h3{
+	font-size: 36px;
+	margin-top: 120px;
+	margin-left: 160px;
+	margin-bottom: 60px;
+	text-transform: uppercase;
+}
+.work .text_block .nav{
+	border: none;
+	margin-left: 160px;
+}
+.work .text_block .nav a{
+	background-color: transparent !important;
+	border: none !important;
+	font-family: GothamPro;
+	color:  #8e8d8c;
+	font-size: 18px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 500;
+}
+.work .text_block .nav li:first-child a{
+	margin-right: 50px;
+}
+.work .text_block .nav li.active a{
+	color: #000;
+}
+.work .text_block .tab-pane{
+	text-align: center;
+	margin-top: 136px;
+	position: relative;
+}
+.work .text_block .tab-pane .arrow{
+	position: absolute;
+	left: 89%;
+	top: -73px;
+}
+.work .text_block .tab-pane .arrow .fa{
+	margin-right: 30px;
+	cursor: pointer;
+	font-size: 20px;
+}
+.work .text_block .tab-pane .arrow .fa:hover{
+	opacity: 0.3;
+}	
+.work .text_block .tab-pane .slide{
+	outline: none;
+	padding: 0 80px;
+	font-family: GothamPro;
+	color:  #000000;
+	font-size: 18px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 500;
+}
+.work .text_block .tab-pane .slide img{
+	padding-bottom: 20px;
+}
+
+
+
 
 
 
@@ -428,13 +485,88 @@ a.a_black:hover{
 	background: url("img/bg5.jpg");
 	position: relative;
 }
+.team .text_block h3{
+	font-size: 36px;
+	margin-top: 120px;
+	margin-left: 160px;
+	margin-bottom: 237px;
+	text-transform: uppercase;
+}
+.team .text_block .arrow{
+	position: absolute;
+	left: 89%;
+	top: 320px;
+}
+.team .text_block .arrow .fa{
+	margin-right: 30px;
+	cursor: pointer;
+	font-size: 20px;
+}
+.team .text_block .arrow .fa:hover{
+	opacity: 0.3;
+}	
+.team .text_block .slide{
+	outline: none;
+	padding: 0 80px;
+	display: block;
+}
+.team .text_block .slide img{
+	/*padding-bottom: 20px;*/
+}
+.team .text_block .slide span{
+	display: block;
+	text-align: center;
+	font-family: GothamPro;
+	color: #000000;
+	font-size: 18px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+}
+.team .text_block .slide span.name{
+	font-size: 24px; 
+	font-weight: 500;
+}
+.team .text_block .slide span.post{
+	margin-top: 10px;
+}
+
 
 
 /*6 not-bg*/
 .certificates{
-	height: 900px;
+	height: 836px;
 	position: relative;
 }
+.certificates .text_block h3{
+	font-size: 36px;
+	margin-top: 120px;
+	margin-left: 160px;
+	margin-bottom: 237px;
+	text-transform: uppercase;
+}
+.certificates .text_block .arrow{
+	position: absolute;
+	left: 89%;
+	top: 320px;
+}
+.certificates .text_block .arrow .fa{
+	margin-right: 30px;
+	cursor: pointer;
+	font-size: 20px;
+}
+.certificates .text_block .arrow .fa:hover{
+	opacity: 0.3;
+}	
+.certificates .text_block .slide{
+	outline: none;
+	padding: 0 80px;
+	display: block;
+}
+.certificates .text_block .slide img{
+	padding-bottom: 20px;
+}
+
+
+
 
 /*7*/
 .contacts{
