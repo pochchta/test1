@@ -41,6 +41,10 @@
 	font-weight: bold;
 }
 
+ul,li{
+	margin: 0;
+	padding: 0;
+}
 .clearfix:after{
 	content: '';
 	clear: both;
@@ -62,12 +66,37 @@ a.a_black:hover{
 	background: linear-gradient(-45deg, rgba(0, 0, 0, 0.01) 49.9%, rgba(0, 0, 0, 0.1) 49.9%, rgba(0, 0, 0, 0.1) 60%, 
 		rgba(0, 0, 0, 0.01) 60%), linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.01) 10%);
 	background-size: 10px 10px;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;	
 }
+.bg{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9;		
+}
+.text_block{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 11; 
+	background-color: rgba(222,222,222,0.90);
+}
+
+
+
 
 .container_main{
 	max-width: 1600px;
 	margin: 0 auto;
-
 }
 .sidebar{
 	background-color: #f7f7f7;
@@ -167,25 +196,27 @@ a.a_black:hover{
 
 .main{
 	overflow: hidden;
+}
+.header{
 	position: relative;
 }
-.main .slider_header {
+.header .slider_header {
 	margin: 0;
 }
-.main .slider_header .slide{
+.header .slider_header .slide{
 	height: 900px;
 }
 
-.main .slider_header .slide img{
+.header .slider_header .slide img{
 	overflow: hidden;
 }
-.main .slider_header .slick-dots{
+.header .slider_header .slick-dots{
 	width: auto;
 	bottom: 60px;
 	left: 160px;
 	z-index: 15;
 }
-.main .slider_header .slick-dots li button:before{
+.header .slider_header .slick-dots li button:before{
 	position: absolute;
 	display: block;    
 	top: 0;
@@ -200,14 +231,14 @@ a.a_black:hover{
 	opacity: 1;
 	border: 2px solid #fec300;    
 }
-.main .slider_header .slick-dots li.slick-active button:before{
+.header .slider_header .slick-dots li.slick-active button:before{
 	background-color: #fec300;
 }
 
 
 
 
-.text_header{
+.header .text_header{
 	height: 900px;
 	width: 100%;
 	position: absolute;
@@ -216,23 +247,23 @@ a.a_black:hover{
 	z-index: 10; 
 	background-color: rgba(33,34,0,0.58);
 }
-.text_header .left{
+.header .text_header .left{
 	float: left;
 	width: 870px;
 }
-.text_header .left h1{
+.header .text_header .left h1{
 	color:  #fec300;
 	font-size: 48px;
 	width: 580px;
 	margin-top: 250px;
 	margin-left: 161px;
 }
-.text_header .left h1 span{
+.header .text_header .left h1 span{
 	padding-top: 14px;
 	display: inline-block;
 }
 
-.text_header .left .text{
+.header .text_header .left .text{
 	width: 697px;
 	font-family: GothamPro;
 	color:  #ffffff;
@@ -243,7 +274,7 @@ a.a_black:hover{
 
 }
 
-.text_header .sticker{
+.header .text_header .sticker{
 	float: right;
 	background: url("img/sticker_header.png") no-repeat;
 	width: 170px;
@@ -251,21 +282,21 @@ a.a_black:hover{
 	margin-top: 258px;
 	margin-right: 161px;
 }
-.text_header .bottom{
+.header .text_header .bottom{
 	position: absolute;
 	bottom: 60px;
 	right: 0;
 	margin-top: 357px;
 	margin-right: 161px;
 }
-.text_header .bottom .description{
+.header .text_header .bottom .description{
 	width: 140px;
 	font-family: GothamPro;
 	color:  #ffffff;
 	font-size: 14px;/* Приближение из-за подстановки шрифтов */
 	font-weight: 400;
 }
-.text_header .bottom a{
+.header .text_header .bottom a{
 	border-width: 2px;
 	border-color: #fec300;
 	border-style: solid;
@@ -273,9 +304,62 @@ a.a_black:hover{
 	height: 46px;
 	display: block;
 	font-family: GothamPro;
-color:  #fec300;
-font-size: 14px;/* Приближение из-за подстановки шрифтов */
-font-weight: 700;
-line-height: 46px;
-text-align: center;
+	color:  #fec300;
+	font-size: 14px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 700;
+	line-height: 46px;
+	text-align: center;
+}
+
+
+
+/*2*/
+.furniture{			
+	height: 900px;
+	background: url("img/bg2.jpg");
+	position: relative;
+}
+.furniture .text_block h3{
+	font-size: 36px;
+	margin-top: 120px;
+	margin-left: 160px;
+}
+
+
+/*3*/
+.advantage{
+	height: 900px;
+	background: url("img/bg3.jpg");
+	position: relative;
+}
+
+
+/*4*/
+.work{
+	height: 900px;
+	background: url("img/bg4.jpg");
+	position: relative;
+}
+
+
+
+/*5*/
+.team{
+	height: 900px;
+	background: url("img/bg5.jpg");
+	position: relative;
+}
+
+
+/*6 not-bg*/
+.certificates{
+	height: 900px;
+	position: relative;
+}
+
+/*7*/
+.contacts{
+	height: 900px;
+	background: url("img/bg7.jpg");
+	position: relative;
 }
