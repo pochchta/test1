@@ -1,0 +1,47 @@
+@media only screen and (max-width : 1599px) {
+	.header .text_header .sticker{
+		display: none;
+	}
+	.furniture{			
+		height: 1450px;
+	}
+	.furniture ul li .text{
+		margin-left: 60px;
+	}
+	.advantage .text_block{
+		background-image: none;
+	}
+	.advantage .text_block ul li{
+		margin: 0 100px !important;
+	}
+}
+@media only screen and (max-width : 1280px) {
+	.header .text_header .left{
+		margin-left: 50px;
+	}
+.contacts{
+	min-height: 1300px;
+	}
+	.contacts .blocks > div{
+		float: none;
+		margin: 0 auto;
+	}
+}
+
+
+
+@media only screen and (min-width : 320px) {
+
+}
+@media only screen and (min-width : 480px) {
+
+}
+@media only screen and (min-width : 768px) {
+
+}
+@media only screen and (min-width : 992px) {
+
+}
+@media only screen and (min-width : 1200px) {
+
+}
