@@ -2,17 +2,30 @@
 	.header .text_header .sticker{
 		display: none;
 	}
-	.furniture{			
+/*	.furniture{			
 		height: 1450px;
 	}
 	.furniture ul li .text{
 		margin-left: 60px;
-	}
+	}*/
 	.advantage .text_block{
 		background-image: none;
 	}
+	.advantage .text_block ul{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-left: 20px;
+	}
 	.advantage .text_block ul li{
-		margin: 0 100px !important;
+		margin: 0 !important;
+		flex: 0 1 500px;
+		line-height: 32px;		
+		padding-bottom: 23px;
 	}
 }
 @media only screen and (max-width : 1280px) {

@@ -357,21 +357,21 @@ a.a_black:hover{
 	background: url("img/bg2.jpg") no-repeat;
 	position: relative;
 }
-.furniture ul{
+.furniture ul,
+.furniture ul li,
+.furniture ul li .text,
+.furniture ul li .num{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+}
+.furniture ul{
 	flex-wrap: wrap;
 	justify-content: center;
 }
 .furniture ul li{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
 	margin: 0 80px 30px;
 }
 .furniture ul li .text{
@@ -379,20 +379,22 @@ a.a_black:hover{
 	color: #000000;
 	font-size: 18px; 
 	font-weight: 400;
-	position: relative;
 	width: 410px;
+	/*justify-content: space-between;*/
 }
-.furniture ul li .text .num{
+.furniture ul li .num{
 	font-size: 72px;
-	background: linear-gradient(#f9e7b1, #c29a3c);  /* подробнее про градиенты */ 
-	-webkit-background-clip: text;  /* подробнее про background-clip */ 
+	background: linear-gradient(#f9e7b1, #c29a3c);
+	-webkit-background-clip: text;
 	color: transparent;
-	position: absolute;
 	left: -72px;
 }
 .furniture ul li .text span{
 	font-weight: 700;
+	display: inline;
 }
+
+
 
 /*3*/
 .advantage{
@@ -405,7 +407,6 @@ a.a_black:hover{
 	background-position: center center;
 }
 .advantage .text_block ul{
-
 }
 .advantage .text_block ul li{
 	line-height: 43px;
