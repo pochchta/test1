@@ -109,13 +109,32 @@ a.a_black:hover{
 	z-index: 10;	
 }
 .text_block{
-	height: 100%;
+	min-height: 899px;
 	width: 100%;
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
 	z-index: 11; 
 	background-color: rgba(222,222,222,0.90);
+}
+.text_block .title{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-bottom: 42px;
+}
+.text_block .title h3{
+	flex: 0 1 500px;
+	text-align: center;
+	font-size: 36px;
+	margin-top: 120px;
+	text-transform: uppercase;
+	padding: 0 10px;
+}
+.slick-arrow{	/* default arrows slider "Slick" */
+	display: none !important;
 }
 
 
@@ -189,9 +208,9 @@ a.a_black:hover{
 	top: 9px;
 	left: 15px;
 }
-.sidebar .dropdown:hover > .dropdown-menu{
-	/*display: block;*/
-}
+/*.sidebar .dropdown:hover > .dropdown-menu{
+	display: block;
+}*/
 .sidebar .tel{
 	font-family: "GothamPro", sans-serif;
 	color: #000000;
@@ -273,7 +292,6 @@ a.a_black:hover{
 .header .slider_header .slick-dots li.slick-active button:before{
 	background-color: #fec300;
 }
-
 .header .text_header{
 	height: 100%;
 	width: 100%;
@@ -298,7 +316,6 @@ a.a_black:hover{
 	padding-top: 14px;
 	display: inline-block;
 }
-
 .header .text_header .left .text{
 	width: 697px;
 	font-family: "GothamPro", sans-serif;
@@ -306,9 +323,7 @@ a.a_black:hover{
 	font-size: 18px;
 	font-weight: 400;
 	margin-top: 40px;
-
 }
-
 .header .text_header .sticker{
 	float: right;
 	background: url("img/sticker_header.png") no-repeat;
@@ -339,16 +354,8 @@ a.a_black:hover{
 
 /*2*/
 .furniture{			
-	height: 900px;
 	background: url("img/bg2.jpg") no-repeat;
 	position: relative;
-}
-.furniture .text_block h3{
-	font-size: 36px;
-	margin-top: 120px;
-	margin-left: 160px;
-	margin-bottom: 182px;
-	text-transform: uppercase;
 }
 .furniture ul{
 	display: -webkit-flex;
@@ -389,7 +396,6 @@ a.a_black:hover{
 
 /*3*/
 .advantage{
-	height: 900px;
 	background: url("img/bg3.jpg");
 	position: relative;
 }
@@ -397,13 +403,6 @@ a.a_black:hover{
 	background-image: url('img/logo_and_stick.png');
 	background-repeat: no-repeat;
 	background-position: center center;
-}
-.advantage .text_block h3{
-	font-size: 36px;
-	margin-top: 120px;
-	margin-left: 160px;
-	margin-bottom: 60px;
-	text-transform: uppercase;
 }
 .advantage .text_block ul{
 
@@ -449,37 +448,31 @@ a.a_black:hover{
 
 /*4*/
 .work{
-	height: 900px;
 	background: url("img/bg4.jpg");
 	position: relative;
 }
-.work .text_block h3{
-	font-size: 36px;
-	margin-top: 120px;
-	margin-left: 160px;
-	margin-bottom: 60px;
-	text-transform: uppercase;
+.work .text_block ul{
+	text-align: right;
+	margin: 0 30px;
 }
-.work .text_block .nav{
-	border: none;
-	margin-left: 160px;
+.work .text_block .nav li{
+	display: inline-block;
 }
 .work .text_block .nav a{
-	background-color: transparent !important;
-	border: none;/* !important;*/
+	background-color: transparent;
+	border: 1px solid transparent;	
 	font-family: "GothamPro", sans-serif;
 	color:  #8e8d8c;
 	font-size: 18px;
 	font-weight: 500;
-	display: inline-block;
 	padding: 0;
-	margin: 0 7px;
+	margin: 0 0 0 7px;
 }
 .work .text_block .nav a:hover{
 	border-bottom: 1px solid rgba(142,141,140, 0.3);
 }
-.work .text_block .nav li:first-child a{
-	margin-right: 50px;
+.work .text_block .nav li:nth-child(2) a{
+	margin-left: 50px;
 }
 .work .text_block .nav li.active a{
 	color: #000;
@@ -490,9 +483,8 @@ a.a_black:hover{
 	position: relative;
 }
 .work .text_block .tab-pane .arrow{
-	position: absolute;
-	left: 89%;
-	top: -73px;
+	text-align: right;
+	margin-bottom: 20px;
 }
 .work .text_block .tab-pane .arrow .fa{
 	margin-right: 30px;
@@ -521,21 +513,12 @@ a.a_black:hover{
 
 /*5*/
 .team{
-	height: 900px;
 	background: url("img/bg5.jpg");
 	position: relative;
 }
-.team .text_block h3{
-	font-size: 36px;
-	margin-top: 120px;
-	margin-left: 160px;
-	margin-bottom: 237px;
-	text-transform: uppercase;
-}
 .team .text_block .arrow{
-	position: absolute;
-	left: 89%;
-	top: 320px;
+	text-align: right;
+	margin-bottom: 20px;
 }
 .team .text_block .arrow .fa{
 	margin-right: 30px;
@@ -572,20 +555,14 @@ a.a_black:hover{
 
 /*6 not-bg*/
 .certificates{
-	height: 836px;
 	position: relative;
 }
-.certificates .text_block h3{
-	font-size: 36px;
-	margin-top: 120px;
-	margin-left: 160px;
-	margin-bottom: 237px;
-	text-transform: uppercase;
+.certificates .text_block .title{
+	margin-bottom: 100px;
 }
 .certificates .text_block .arrow{
-	position: absolute;
-	left: 89%;
-	top: 320px;
+	text-align: right;
+	margin-bottom: 20px;
 }
 .certificates .text_block .arrow .fa{
 	margin-right: 30px;
@@ -609,25 +586,26 @@ a.a_black:hover{
 
 /*7*/
 .contacts{
-	min-height: 900px;
 	background: url("img/bg7.jpg") no-repeat;
 	position: relative;
 }
-.contacts .text_block h3{
-	font-size: 36px;
-	margin-top: 120px;
-	margin-left: 160px;
-	margin-bottom: 42px;
-	text-transform: uppercase;
-}
 .contacts .blocks{
 	margin: 0 auto; 
-	max-width: 916px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 .contacts .left{
-	float: left;
 	width: 484px;	
-	margin-right: 80px;
+	margin: 0 20px;
 }
 .contacts .left img{
 	width: 100%;
@@ -661,8 +639,8 @@ a.a_black:hover{
 }
 .contacts .right{
 	width: 350px;
-	float: left;
 	text-align: center;
+	margin: 0 20px;
 }
 .contacts .right h4{
 	font-family: "GothamPro", sans-serif;
@@ -700,4 +678,5 @@ a.a_black:hover{
 }
 .contacts .right .btn-primary{
 	margin-top: 41px;
+	margin-bottom: 50px;
 }
