@@ -143,11 +143,22 @@ a.a_black:hover{
 .container_main{
 	max-width: 1600px;
 	margin: 0 auto;
+	position: relative;
+}
+.sidebar_drop{
+	font-size: 50px;
+	color: #ccc !important;
+	position: fixed;
+    top: 10px;
+    left: 30px;
+	z-index: 21;
+	display: none;
 }
 .sidebar{
 	background-color: #f7f7f7;
 	width: 311px;
 	position: fixed;
+	z-index: 20;
 }
 .sidebar .logo{
 	display: block;
@@ -229,6 +240,7 @@ a.a_black:hover{
 	font-weight: 300;
 	margin-left: 61px;
 	display: inline-block;
+	margin-bottom: 20px;
 }
 .sidebar .mail span{
 	font-weight: 500;
@@ -256,7 +268,7 @@ a.a_black:hover{
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 9; 	
+	/*z-index: 9;*/
 }
 .header .slider_header .slide{
 	height: 900px;
@@ -270,9 +282,6 @@ a.a_black:hover{
 	bottom: 60px;
 	left: 160px;
 	z-index: 15;
-}
-.header .slider_header .slick-arrow{
-	display: none !important;
 }
 .header .slider_header .slick-dots li button:before{
 	position: absolute;
@@ -309,7 +318,7 @@ a.a_black:hover{
 .header .text_header .left h1{
 	color:  #fec300;
 	font-size: 48px;
-	width: 580px;
+	/*width: 580px;*/
 	margin-top: 250px;
 }
 .header .text_header .left h1 span{
@@ -317,7 +326,7 @@ a.a_black:hover{
 	display: inline-block;
 }
 .header .text_header .left .text{
-	width: 697px;
+	/*width: 697px;*/
 	font-family: "GothamPro", sans-serif;
 	color:  #ffffff;
 	font-size: 18px;
@@ -334,10 +343,10 @@ a.a_black:hover{
 }
 .header .text_header .bottom{
 	position: absolute;
-	bottom: 60px;
-	right: 0;
-	margin-top: 357px;
-	margin-right: 161px;
+    top: 700px;
+    right: 0;
+    width: 300px;
+	text-align: center;
 }
 .header .text_header .bottom .description{
 	width: 140px;
@@ -345,6 +354,7 @@ a.a_black:hover{
 	color:  #ffffff;
 	font-size: 14px;
 	font-weight: 400;
+	margin: 0 auto;
 }
 .header .text_header .bottom .btn-primary{
 	margin-top: 10px;
@@ -358,9 +368,7 @@ a.a_black:hover{
 	position: relative;
 }
 .furniture ul,
-.furniture ul li,
-.furniture ul li .text,
-.furniture ul li .num{
+.furniture ul li{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -372,15 +380,15 @@ a.a_black:hover{
 	justify-content: center;
 }
 .furniture ul li{
-	margin: 0 80px 30px;
+	margin: 0 50px 30px 30px;
+	flex: 0 1 480px;
 }
 .furniture ul li .text{
 	font-family: "GothamPro", sans-serif;
 	color: #000000;
 	font-size: 18px; 
 	font-weight: 400;
-	width: 410px;
-	/*justify-content: space-between;*/
+	text-align: justify;
 }
 .furniture ul li .num{
 	font-size: 72px;
@@ -388,10 +396,13 @@ a.a_black:hover{
 	-webkit-background-clip: text;
 	color: transparent;
 	left: -72px;
+	text-align: center;
+	margin-right: 30px;
+	flex: 0 0 50px;
+	line-height: 68px;
 }
 .furniture ul li .text span{
 	font-weight: 700;
-	display: inline;
 }
 
 

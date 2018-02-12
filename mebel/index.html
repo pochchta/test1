@@ -14,6 +14,9 @@
 </head>
 <body data-spy="scroll" data-target="#navbar">
 	<div class="container_main">
+		<a class="sidebar_drop" data-toggle="collapse" href="#navbar" aria-expanded="false" aria-controls="navbar">
+			<i class="fa fa-align-justify"></i>
+		</a>
 		<div class="sidebar" id="navbar">
 			<a href="#" class="logo"></a>
 			<a href="#" class="insta a_black">
@@ -39,7 +42,7 @@
 
 		<div class="main">
 
-<!-- 			<div class="header" id="header">
+			<div class="header" id="header">
 				<div class="slider_header">
 					<div class="slide">
 						<img src="img/slider_header_1.jpg" alt="">
@@ -75,7 +78,7 @@
 						</a>
 					</div>	
 				</div>				
-			</div> -->
+			</div>
 
 			<div class="furniture" id="furniture">
 				<div class="line_pattern"></div>
@@ -84,53 +87,67 @@
 						<h3>НАША МЕБЕЛЬ</h3>
 					</div>
 					<ul>
+
 						<li>
 							<div class="num">1.</div>
 							<div class="text">
-								<span>Шкафы.</span>
-								Именно эта мебель является функциональной, экономной и может вписаться в различные дизайны даже самого обычного помещения. Помогает разгружать пространства, как детских комнат, так и прихожей.
+								<p>
+									<span>Шкафы.</span>
+									Именно эта мебель является функциональной, экономной и может вписаться в различные дизайны даже самого обычного помещения. Помогает разгружать пространства, как детских комнат, так и прихожей.
+								</p>
 							</div>
 						</li>
+
 						<li>
-							
+							<div class="num">2.</div>
 							<div class="text">
-								<div class="num">2.</div>
-								<span>Детская.</span>
-								Вариативность, мобильность и экономичность – бесспорные достоинства детской модульной мебели, которые делают ее все более и более популярной.
+								<p>
+									<span>Детская.</span>
+									Вариативность, мобильность и экономичность – бесспорные достоинства детской модульной мебели, которые делают ее все более и более популярной.
+								</p>
 							</div>
 						</li>
+
 						<li>
-							
+							<div class="num">3.</div>
 							<div class="text">
-								<div class="num">3.</div>
-								<span>Кухни.</span>
-								В кухне должны царить тепло и уют. Здесь должно быть комфортно и хозяйке, создающей кулинарные шедевры, и всем членам семьи, которые ежедневно собираются за завтраком, обедом и ужином. Создать нужную атмосферу поможет кухонная мебель.
+								<p>
+									<span>Кухни.</span>
+									В кухне должны царить тепло и уют. Здесь должно быть комфортно и хозяйке, создающей кулинарные шедевры, и всем членам семьи, которые ежедневно собираются за завтраком, обедом и ужином. Создать нужную атмосферу поможет кухонная мебель.
+								</p>
 							</div>
 						</li>
+
 						<li>
-							
+							<div class="num">4.</div>
 							<div class="text">
-								<div class="num">4.</div>
-								<span>Прихожая.</span>
-								Мебель для прихожей отдельными модулями или стильные гарнитуры – решение, которое не разочарует, особенно если вы доверите обустройство собственного дома нашим специалистам
+								<p>
+									<span>Прихожая.</span>
+									Мебель для прихожей отдельными модулями или стильные гарнитуры – решение, которое не разочарует, особенно если вы доверите обустройство собственного дома нашим специалистам
+								</p>
 							</div>
 						</li>
+
 						<li>
-							
+							<div class="num">5.</div>
 							<div class="text">
-								<div class="num">5.</div>
-								<span>Офисная мебель.</span>
-								производство офисной мебели под заказ по современным технологиям. Производство специализированной офисной мебели из ДСП
+								<p>
+									<span>Офисная мебель.</span>
+									производство офисной мебели под заказ по современным технологиям. Производство специализированной офисной мебели из ДСП
+								</p>
 							</div>
 						</li>
+
 						<li>
-							
+							<div class="num">6.</div>
 							<div class="text">
-								<div class="num">6.</div>
-								<span>Гостиная.</span>
-								Индивидуальная мебель для гостиной позволяет создать интерьер, соответствующий вашей индивидуальности, и легко изменять обстановку под влиянием новой идеи.
+								<p>
+									<span>Гостиная.</span>
+									Индивидуальная мебель для гостиной позволяет создать интерьер, соответствующий вашей индивидуальности, и легко изменять обстановку под влиянием новой идеи.
+								</p>
 							</div>
 						</li>
+
 					</ul>
 				</div>
 			</div>
@@ -321,7 +338,7 @@
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script type="text/javascript" src="libs/slick/slick.min.js"></script>	
+	<script src="libs/slick/slick.min.js"></script>	
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script>
 		$(document).ready(function(){
@@ -332,18 +349,18 @@
 			$('.slider_works').slick({
 				slidesToShow: 3,
 				responsive: [
-					{
-						breakpoint: 1200,
-						settings: {
-							slidesToShow: 2,
-						}
-					},
-					{
-						breakpoint: 920,
-						settings: {
-							slidesToShow: 1,
-						}
+				{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 2,
 					}
+				},
+				{
+					breakpoint: 920,
+					settings: {
+						slidesToShow: 1,
+					}
+				}
 				]
 			});
 			$('.slider_works_right').on('click', function() {
@@ -356,18 +373,18 @@
 			$('.slider_team').slick({
 				slidesToShow: 3,
 				responsive: [
-					{
-						breakpoint: 1200,
-						settings: {
-							slidesToShow: 2,
-						}
-					},
-					{
-						breakpoint: 920,
-						settings: {
-							slidesToShow: 1,
-						}
+				{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 2,
 					}
+				},
+				{
+					breakpoint: 920,
+					settings: {
+						slidesToShow: 1,
+					}
+				}
 				]
 			});
 			$('.slider_team_right').on('click', function() {
@@ -380,18 +397,18 @@
 			$('.slider_cert').slick({
 				slidesToShow: 3,
 				responsive: [
-					{
-						breakpoint: 1200,
-						settings: {
-							slidesToShow: 2,
-						}
-					},
-					{
-						breakpoint: 920,
-						settings: {
-							slidesToShow: 1,
-						}
+				{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 2,
 					}
+				},
+				{
+					breakpoint: 920,
+					settings: {
+						slidesToShow: 1,
+					}
+				}
 				]
 			});
 			$('.slider_cert_right').on('click', function() {
@@ -404,4 +421,3 @@
 	</script>
 </body>
 </html>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
